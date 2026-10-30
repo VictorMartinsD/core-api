@@ -4,7 +4,7 @@
     "lib": ["ES2024"],
     "module": "nodenext",
     "moduleResolution": "nodenext",
-    "types": ["node", "express"],
+    "types": ["node", "express", "jest"],
 
     "paths": {
       "@/*": ["./src/*"]
