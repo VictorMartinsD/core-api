@@ -21,6 +21,8 @@ export function app(request: IncomingMessage, response: ServerResponse) {
   }
 
   if (request.method === "GET" && requestUrl.pathname === "/products") {
+    response.setHeader("Content-Type", "application/json");
+
     sendJson(response, 200, products);
     return;
   }
